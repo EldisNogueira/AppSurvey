@@ -2,6 +2,10 @@ package com.appsurvey;
 
 import com.facebook.react.ReactActivity;
 
+import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
+import com.swmansion.gesturehandler.react.RNGestureHandlerEnableRootView;
+
 public class MainActivity extends ReactActivity {
 
   /**
@@ -12,4 +16,15 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "AppSurvey";
   }
+  
+  @Override
+  protected string ReactActivityDelegate createReactActivityDelegate(){
+	return new ReactActivityDelegate(this, getMainComponentName()) {
+		@Override
+		protected ReactRootView createRootView(){
+			return new RNGestureHandlerEnableRootView(MainActivity.this);
+		}
+	};
+  }
+  
 }

@@ -75,10 +75,9 @@ export default class Login extends Component() {
           <View style={estilo.MainContainer}>
             <RadioGroup
               color="#0AA363"
-              labelStyle={{fontSize: 16}}
               radioButtons={this.state.radioButtons}
               onPress={radioButtons => this.setState({radioButtons})}
-              style={{paddingTop: 5}}
+              style={estilo.radioB}
             />
             <View style={estilo.selectedItemView}>
               <Text style={estilo.selectedText}>
@@ -161,6 +160,11 @@ const estilo = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#0AA363',
     borderRadius: 10,
+  },
+
+  radioB: {
+    fontSize: 16,
+    paddingTop: 5,
   },
 
   containerButtomEnviar: {

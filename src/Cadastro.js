@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import React, {Component} from 'react';
+import {View, Text, StyleSheet} from 'react-native';
 
 export default class Cadastro extends Component() {
   render() {
@@ -12,6 +12,9 @@ export default class Cadastro extends Component() {
 }
 
 const estilo = StyleSheet.create({
-  container:{flex: 1, alignItems: 'center', justifyContent: 'center' },
-  
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

@@ -11,10 +11,8 @@ export default class Splash extends Component {
   render() {
     return (
       <SafeAreaView style={estilo.container}>
-
         <Text style={estilo.textOne}>MOBLIT</Text>
         <Text style={estilo.textTwo}>pesquisas</Text>
-
       </SafeAreaView>
     );
   }
